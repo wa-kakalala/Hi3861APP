@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FunctionActivity">
+
+    <TextView
+        android:id="@+id/debug_text"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:text="连接失败"
+        android:textColor="#ff0000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="240dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_forward"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="15dp"
+
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="140dp"
+        android:text="Forward"
+        android:textSize="16dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_right"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="15dp"
+
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toBottomOf="@id/bnt_forward"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="TurnRight"
+        android:textSize="16dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_backward"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="15dp"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toBottomOf="@id/bnt_forward"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="140dp"
+        android:text="Backward"
+        android:textSize="16dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_left"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="15dp"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toTopOf="@id/bnt_right"
+        android:text="TurnLeft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:textSize="16dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bnt_stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cornerRadius="20dp"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toTopOf="@id/bnt_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="Stop"
+        android:textSize="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
