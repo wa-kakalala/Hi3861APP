@@ -92,5 +92,30 @@
         android:text="Stop"
         android:textSize="16dp"
         />
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/sticky_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:ss_animationDuration="600"
+        app:ss_iconPadding="18dp"
+        app:ss_iconSize="22dp"
+
+        app:ss_leftText="Open"
+
+        app:ss_rightText="Close"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+        app:ss_switchColor="@color/colorSwitchColor"
+        app:ss_textColor="@color/colorTextColor"
+        app:ss_textSize="16dp"
+        app:ss_animationType="line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="480dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints SpeakableTextPresentCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
